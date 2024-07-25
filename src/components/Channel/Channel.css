@@ -1,0 +1,46 @@
+.channel-screen{
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1D21;
+    min-height: 100vh;
+    max-height: 100%;
+}
+
+.channel-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 2px 15px 15px;
+}
+
+.workspace-title{
+    font-size: 20px;
+    color: grey;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    padding-top: 4px;
+    align-items: center;
+}
+
+.icon{
+    color: grey;
+}
+
+.icon-home{
+    color: grey;
+    font-size: 23px;
+}
+
+.channel-title{
+    display: flex;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 18px;
+    color: gray;
+    border-top: grey solid 2px;
+}
+

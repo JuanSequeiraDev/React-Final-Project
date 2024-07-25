@@ -1,0 +1,52 @@
+.chat-text{
+    color: rgb(236, 233, 233);
+    font-size: 15px;
+}
+
+div .my-message{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.msg-bubble{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    gap: 4px;
+    margin: 10px;
+    padding: 10px;
+    /* border: #48e solid 2px; */
+    background-color: rgb(14, 36, 68);
+    border-radius: 10px;
+}
+
+.message-header{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 1px;
+    border-radius: 10px;
+}
+
+.my-message .author{
+    color: purple;
+}
+
+.other .author{
+    color: rosybrown;
+}
+
+.message-header .date{
+    font-size: 12px;
+    color: gray;
+}
+
+.message-header .text{
+    
+}

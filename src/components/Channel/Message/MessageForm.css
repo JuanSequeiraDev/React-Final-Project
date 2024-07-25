@@ -1,0 +1,19 @@
+.message-form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: none;
+    position: fixed;
+    bottom: 30px;
+    overflow: hidden;
+}
+
+.text-input{
+    background-color: rgb(14, 36, 68);
+    border-radius: 15px;
+    width: 80%;
+    height: 30px;
+    border: none;
+    
+}
