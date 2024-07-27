@@ -1,0 +1,21 @@
+.channel-create-form{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.channel-name-input{
+    padding: 4px;
+    border: grey solid 1px;
+    background-color: #1A1D21;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.channel-name-bttn{
+    border: gray solid 1px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #1A1D21;
+    color: grey;
+}

@@ -5,15 +5,32 @@
     justify-content: center;
     background-color: none;
     position: fixed;
-    bottom: 30px;
-    overflow: hidden;
+    border-top: grey solid 3px;
+    padding: 15px 0px;
+    background-color: #1A1D21;
+    bottom: 0;
+    gap: 10px;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .text-input{
     background-color: rgb(14, 36, 68);
     border-radius: 15px;
-    width: 80%;
-    height: 30px;
-    border: none;
-    
+    width: 70%;
+    min-height: 20px;
+    max-height: 80px;
+    border: grey solid 2px;
+    padding: 10px;
+    color: white;
+}
+
+.text-submit-bttn{
+    border: rgba(128, 128, 128, 0.315) solid 2px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgb(14, 36, 68);
+    color: rgb(192, 188, 188);
 }

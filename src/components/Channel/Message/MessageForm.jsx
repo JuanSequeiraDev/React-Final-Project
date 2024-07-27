@@ -11,7 +11,7 @@ const MessageForm = ({messages, setMessages}) => {
     const workspace = mook[workspaceId - 1]
     const canal = workspace.canales[channelId - 1]
 
-    console.log(canal)
+    /* console.log(canal) */
     const Idworkspace = workspaceId - 1
     const Idchannel = channelId - 1
     
@@ -43,7 +43,7 @@ const MessageForm = ({messages, setMessages}) => {
     return (
         <form className='message-form' onSubmit={handleSubmit}>
             <input type="text" name='message' className='text-input'/>
-            <button type="submit">Upload</button>
+            <button type="submit" className='text-submit-bttn'>Upload</button>
         </form>
     )
 }

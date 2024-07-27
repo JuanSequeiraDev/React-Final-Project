@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import './Channel.css'
 import { guardarMook, obtenerCanal, setMook, obtenerWorkSpace, obtenerMook} from '../LocalStorage/localStorageFunctions'
-import { FaBars } from "react-icons/fa";
+
 import { DiGithub } from "react-icons/di";
 import MessageList from './Message/MessageList';
 import { MessageForm } from '..';
 import { MdDoNotStep } from 'react-icons/md';
+import ChannelListDeploy from './ChannelListDeploy';
 
 const Channel = () => {
     const { workspaceId, channelId } = useParams()
@@ -30,12 +31,16 @@ const Channel = () => {
             <div className='channel-header'>
                 <h2 className='workspace-title'>{workspaces.workspace_name}</h2>
                 <nav className='icons'>
-                    <Link to={'/workspace/' + workspaceId}><FaBars className='icon' /></Link>
+                    <ChannelListDeploy/>
+                    {/* <Link to={'/workspace/' + workspaceId}></Link> */}
                     <Link to={'/'}><DiGithub className='icon-home' /></Link>
                 </nav>
             </div>
-            <h3 className='channel-title'>{channel.channel_name}</h3>
-            <MessageList />
+            <div className='chat-container'>
+                <h3 className='channel-title'>{channel.channel_name}</h3>
+                <MessageList />
+            </div>
+            
             <MessageForm setMessages={setMessages} messages={messages}/>
         </main>
         

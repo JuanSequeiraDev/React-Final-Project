@@ -2,7 +2,6 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { obtenerCanal, validateAuthor } from '../../LocalStorage/localStorageFunctions'
 import './MessageList.css'
-import Message from './Message'
 
 
 const MessageList = () => {

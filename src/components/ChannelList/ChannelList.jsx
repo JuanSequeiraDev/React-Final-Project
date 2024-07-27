@@ -3,6 +3,7 @@ import { setMook, obtenerWorkSpace, obtenerMook } from '../LocalStorage/localSto
 import { Link, useParams } from 'react-router-dom'
 import "./ChannelList.css"
 import { DiGithub } from "react-icons/di";
+import CreateChannel from './CreateChannel';
 
 
 const ChannelList = () => {

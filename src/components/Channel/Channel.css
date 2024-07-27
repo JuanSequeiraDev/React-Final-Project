@@ -12,6 +12,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 2px 15px 15px;
+    border-bottom: grey solid 2px;
+    margin-bottom: 5px;
 }
 
 .workspace-title{
@@ -26,10 +28,6 @@
     align-items: center;
 }
 
-.icon{
-    color: grey;
-}
-
 .icon-home{
     color: grey;
     font-size: 23px;
@@ -41,6 +39,33 @@
     padding-top: 10px;
     font-size: 18px;
     color: gray;
-    border-top: grey solid 2px;
 }
 
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding-bottom: 5px;
+    height: 80vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(14, 36, 68);
+    border: rgba(128, 128, 128, 0.452) solid 0.5px;
+    border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #55555573;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #55555573;
+}

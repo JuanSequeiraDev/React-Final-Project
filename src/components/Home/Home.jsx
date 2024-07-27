@@ -41,9 +41,9 @@ const Home = () => {
                     )
                 }
             </div>
-            <CreateWorkspace setWorkspace={setStorageMOOK}/>
             <div className='button-box'>
                 <button onClick={handleReset} className='reset-bttn'>Reinicar LocalStorage</button>
+                <Link to={'/createWorkspace'} className='workspace-form-link'>Crear Workspace</Link>
             </div>
         </main>
     )

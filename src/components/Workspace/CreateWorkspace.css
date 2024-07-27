@@ -1,15 +1,61 @@
-.workspace-form{
+.create-workspace-main{
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    background-color: #1A1D21;
+}
+
+.link-box{
+    padding: 6px 3px 0 3px;
+}
+
+.atras-link{
+    padding: 3px;
+    font-size: 15px;
+    text-decoration: none;
+    color: grey;
+    border: grey solid 2px;
+    border-radius: 15px;
+    background-color: rgb(14, 36, 68);
+}
+
+.create-workspace-title{
+    display: flex;
     position: fixed;
-    bottom: 70px;
-    left: 5px;
+    top: 45px;
+    align-items: center;
+}
+
+.title-text{
+    background-color: rgb(14, 36, 68);
+    color: gray;
+    padding: 3px;
+    border: gray solid 2px;
+    border-radius: 15px;
+}
+
+.workspace-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
     gap: 3px;
 }
 
+.form-box{
+    padding: 100px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    border: grey solid 4px;
+    margin-bottom: 50px;
+}
+
 .inputs{
-    font-size: 12px;
+    font-size: 20px;
     border: none;
     text-decoration: none;
     background-color: grey;
@@ -17,15 +63,15 @@
 }
 
 .labels{
-    font-size: 15px;
+    font-size: 19px;
     color: gray;
 }
 
 .workspace-bttn{
-    font-size: 12px;
-    margin-top: 2px;
+    font-size: 20px;
+    margin-top: 7%;
     border: none;
     background-color: gray;
-    padding: 3px;
+    padding: 10px;
     border-radius: 15px;
 }
