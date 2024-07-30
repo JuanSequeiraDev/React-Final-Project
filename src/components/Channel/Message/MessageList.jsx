@@ -21,7 +21,7 @@ const MessageList = () => {
                                     <span className='chat-text date'>- {chat.date}</span>
                                 </div>
                                 <div className='text-box'>
-                                    <span className='chat-text text'>{chat.text}</span>
+                                    <p className='chat-text text'>{chat.text}</p>
                                 </div>
                             </div>
                         </div>

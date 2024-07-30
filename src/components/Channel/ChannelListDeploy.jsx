@@ -35,10 +35,11 @@ const ChannelListDeploy = () => {
     return (
         <>
         
-        <nav style={{display: displayValue}}>
+        <nav style={{display: displayValue}} className='nav-display'>
             <div className='nav-content-box'>
                 <div className='deployable-nav'>
                     <h2 className='deploy-title'>{workspace.workspace_name}</h2>
+                    <h2 className='deploy-title-alt'>Canales</h2>
                     {
                         workspace.canales.map(channel =>{
                             const {channel_id, channel_name} = channel

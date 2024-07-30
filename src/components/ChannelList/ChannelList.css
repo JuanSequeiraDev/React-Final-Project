@@ -27,6 +27,66 @@
 
 .ur-channels{
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
     color: grey;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 800px){
+    .home-link{
+        font-size: 40px;
+    }
+
+    .slick-icon{
+        font-size: 40px;
+    }
+
+    .ur-channels{
+        font-size: 30px;
+    }
+
+    .channel-name{
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .home-link{
+        font-size: 50px;
+    }
+
+    .slick-icon{
+        font-size: 50px;
+    }
+
+    .ur-channels{
+        font-size: 35px;
+        margin-bottom: 22px;
+    }
+
+    .channel-name{
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .home-link{
+        font-size: 65px;
+    }
+
+    .slick-icon{
+        font-size: 60px;
+    }
+
+    .ur-channels{
+        font-size: 40px;
+    }
+
+    .channel-name{
+        font-size: 35px;
+        padding: 8px;
+    }
 }

@@ -26,7 +26,7 @@ const ChannelList = () => {
                     workspaces.canales.map(canal =>{
                         return(
                             <div className='channel' key={canal.channel_id}>
-                                <span className='home-text workspace-name'>{canal.channel_name}</span>
+                                <span className='home-text channel-name'>{canal.channel_name}</span>
                                 <div className='link-box'>
                                     <Link to={"/workspace/" + workspaceId + '/' + canal.channel_id} className='home-text workspace-link'>Entrar</Link>
                                 </div>

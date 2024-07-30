@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import './Channel.css'
 import { guardarMook, obtenerCanal, setMook, obtenerWorkSpace, obtenerMook} from '../LocalStorage/localStorageFunctions'
-
+import './ChannelListDeploy.css'
 import { DiGithub } from "react-icons/di";
 import MessageList from './Message/MessageList';
 import { MessageForm } from '..';
@@ -32,7 +32,6 @@ const Channel = () => {
                 <h2 className='workspace-title'>{workspaces.workspace_name}</h2>
                 <nav className='icons'>
                     <ChannelListDeploy/>
-                    {/* <Link to={'/workspace/' + workspaceId}></Link> */}
                     <Link to={'/'}><DiGithub className='icon-home' /></Link>
                 </nav>
             </div>

@@ -8,7 +8,7 @@
 .home-main{
     padding: 10px;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     background-color: #1A1D21 ;
@@ -27,16 +27,20 @@
 }
 
 .workspace-list{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    align-items: baseline;
     gap: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 73vh;
+    padding-right: 7px;
 }
 
 .channel{
     display: flex;
     justify-content: space-between;
-    height: 8vh;
     width: 95vw;
     border: rgb(30, 72, 136) solid 2px;
     background-color: rgb(14, 36, 68);
@@ -58,7 +62,8 @@
 }
 
 .workspace-name{
-    font-size: 20px;
+    font-size: 15px;
+    word-break: break-all;
 }
 
 .link-box{
@@ -82,7 +87,7 @@
     font-size: 14px;
     color: white;
     background-color: rgb(14, 36, 68);
-    width: 100px;
+    width: 90px;
     border: rgba(71, 71, 71, 0.473) solid 2px;
     border-radius: 10px;
     text-decoration: none;
@@ -92,16 +97,112 @@
 .button-box{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
     gap: 15px;
-    margin-top: 20px;
+    padding-top: 15px;
+    border-top: grey solid 3px;
     position: fixed;
-    bottom: 30px;
+    bottom: 0;
+    padding-bottom: 30px;
+    background-color: #1A1D21;
 }
 
 .reset-bttn{
     color: white;
     background-color: rgb(14, 36, 68);
-    width: 100px;
+    min-width: 100px;
     border: rgba(71, 71, 71, 0.473) solid 2px;
     border-radius: 10px;
+    width: 9%;
+    padding: 3px;
+}
+
+@media screen and (min-width: 800px) {
+    .workspace-list{
+        height: 65vh;
+    }
+
+    .welcome-title{
+        font-size: 35px;
+    }
+
+    .ur-workspaces{
+        font-size: 28px;
+    }
+
+    .home-text{
+        font-size: 20px;
+    }
+
+    .workspace-name{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .reset-bttn{
+        font-size: 15px;
+        width: 9%;
+    }
+
+    .workspace-form-link{
+        font-size: 15px;
+        width: 10%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .workspace-list{
+        height: 72vh;
+    }
+
+    .welcome-title{
+        font-size: 50px;
+    }
+
+    .ur-workspaces{
+        font-size: 40px;
+    }
+
+    .home-text{
+        font-size: 27px;
+    }
+
+    .reset-bttn{
+        font-size: 20px;
+        width: 9%;
+        height: 50px;
+    }
+
+    .workspace-form-link{
+        font-size: 20px;
+        width: 7%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .welcome-title{
+        font-size: 60px;
+    }
+
+    .ur-workspaces{
+        font-size: 45px;
+    }
+
+    .home-text{
+        font-size: 35px;
+    }
+
+    .reset-bttn{
+        font-size: 25px;
+        width: 9%;
+        height: 4%;
+        padding: 5px;
+    }
+
+    .workspace-form-link{
+        font-size:25px;
+        width: 7%;
+    }
 }

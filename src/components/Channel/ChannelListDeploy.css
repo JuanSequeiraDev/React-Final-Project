@@ -15,9 +15,9 @@
     display: flex;
     position: absolute;
     color: grey;
-    font-size: 14px;
-    right: 27px;
-    top: 19px;
+    font-size: 15px;
+    right: 30px;
+    top: 25px;
     background-color: transparent;
     border: none;
 }
@@ -30,7 +30,7 @@
 .deploy-title{
     color: grey;
     font-size: 18px;
-    padding: 15px 5px;
+    padding: 15px 20vw 15px 5px;
     border-bottom: grey solid 3px;
 }
 
@@ -38,6 +38,8 @@
     text-decoration: none;
     color: grey;
     padding: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .create-channel-box{
@@ -46,18 +48,19 @@
     flex-direction: column;
     margin: 0 35%;
     align-items: center;
-    padding: 3px;
-    border: grey dashed 2.5px;
-    border-radius: 15px;
-    background-color: #1A1D21;
+    
 }
 
 .create-channel-bttn{
     background-color: transparent;
     text-decoration: none;
     border: none;
-    font-size: 15px;
+    font-size: 13px;
     color: grey;
+    padding: 6px;
+    border: grey dashed 2px;
+    border-radius: 15px;
+    background-color: #1A1D21;
 }
 
 .deployable-footer{
@@ -66,4 +69,142 @@
     flex-direction: column;
     gap: 10px;
     padding-bottom: 10px;
+}
+
+.deploy-title-alt{
+    display: none;
+}
+
+
+@media screen and (min-width: 800px){
+    .nav-display{
+        display: flex !important;
+    }
+
+    .nav-content-box{
+        padding: 0;
+        margin: 0;
+        width: 35%;
+        height: 81vh;
+        position: fixed;
+        top: 8.5vh;
+        align-items: baseline;
+        border-right: rgb(80, 79, 79) solid 4px;
+    }
+
+    .deployable-nav{
+        padding: 10px 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+    }
+
+    .deploy-title{
+        display: none;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .display-bttn{
+        display: none;
+        padding: 0;
+        margin: 0;
+        font-size: 25px;
+        top: 15px;
+        right: 45px;
+    }
+
+    .channel-link{
+        padding: 10px 0px 5px 10px;
+        margin: 0;
+        font-size: 18px;
+        
+    }
+
+    .deployable-footer{
+        align-items: center;
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .deploy-title-alt{
+        display: flex;
+        color: grey;
+        padding: 5px 0 10px 5px;
+        border-bottom: grey solid 2px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .create-channel-box{
+        margin: 0 30%;
+        padding: 7px;
+    }
+
+    .create-channel-bttn{
+        font-size: 14px;
+        position: fixed;
+        bottom: 18vh;
+        left: 12vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .nav-content-box{
+        padding: 0;
+        margin: 0;
+        width: 35%;
+        height: 81%;
+        position: fixed;
+        top: 8.8%;
+        align-items: baseline;
+        border-right: rgb(80, 79, 79) solid 4px;
+    }
+
+    .display-bttn{
+        font-size: 40px;
+        top: 15px;
+        right: 70px;
+    }
+
+    .channel-link{
+        font-size: 24px;
+    }
+
+    .deploy-title-alt{
+        font-size: 28px;
+    }
+
+    .create-channel-bttn{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .display-bttn{
+        font-size: 40px;
+        top: 15px;
+        right: 70px;
+    }
+
+    .channel-link{
+        font-size: 28px;
+    }
+
+    .deploy-title-alt{
+        font-size: 32px;
+    }
+
+    /* .create-channel-box{
+        margin-bottom: 10px;
+    } */
+
+    .create-channel-bttn{
+        font-size: 25px;
+    }
 }

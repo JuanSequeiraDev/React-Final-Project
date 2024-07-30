@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 11vh;
     justify-content: center;
+    align-items: center;
     background-color: none;
     position: fixed;
     border-top: grey solid 3px;
@@ -20,11 +22,10 @@ body{
     background-color: rgb(14, 36, 68);
     border-radius: 15px;
     width: 70%;
-    min-height: 20px;
-    max-height: 80px;
-    border: grey solid 2px;
+    border: rgba(128, 128, 128, 0.315) solid 2px;
     padding: 10px;
     color: white;
+    outline: none;
 }
 
 .text-submit-bttn{
@@ -33,4 +34,34 @@ body{
     border-radius: 10px;
     background-color: rgb(14, 36, 68);
     color: rgb(192, 188, 188);
+}
+
+@media screen and (min-width: 800px) {
+    .text-input{
+        font-size: 16px;
+    }
+
+    .text-submit-bttn{
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .text-input{
+        font-size: 18px;
+    }
+
+    .text-submit-bttn{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .text-input{
+        font-size: 25px;
+    }
+
+    .text-submit-bttn{
+        font-size: 32px;
+    }
 }
