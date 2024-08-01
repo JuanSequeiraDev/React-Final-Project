@@ -29,11 +29,19 @@ body{
 }
 
 .text-submit-bttn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: rgba(128, 128, 128, 0.315) solid 2px;
-    padding: 3px;
+    padding: 5px;
     border-radius: 10px;
     background-color: rgb(14, 36, 68);
     color: rgb(192, 188, 188);
+}
+
+.send-arrow{
+    color: grey;
+    font-size: 20px;
 }
 
 @media screen and (min-width: 800px) {
@@ -41,9 +49,6 @@ body{
         font-size: 16px;
     }
 
-    .text-submit-bttn{
-        font-size: 17px;
-    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -51,8 +56,8 @@ body{
         font-size: 18px;
     }
 
-    .text-submit-bttn{
-        font-size: 20px;
+    .send-arrow{
+        font-size: 25px;
     }
 }
 
@@ -61,7 +66,7 @@ body{
         font-size: 25px;
     }
 
-    .text-submit-bttn{
-        font-size: 32px;
+    .send-arrow{
+        font-size: 35px;
     }
 }

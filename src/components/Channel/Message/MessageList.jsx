@@ -9,6 +9,10 @@ const MessageList = () => {
 
     const channel = obtenerCanal(channelId, workspaceId)
     
+    /* const handleBorrar = () =>{
+        
+    } */
+
     return (
         <div>
             {

@@ -40,14 +40,16 @@ const ChannelListDeploy = () => {
                 <div className='deployable-nav'>
                     <h2 className='deploy-title'>{workspace.workspace_name}</h2>
                     <h2 className='deploy-title-alt'>Canales</h2>
-                    {
-                        workspace.canales.map(channel =>{
-                            const {channel_id, channel_name} = channel
-                            return(
-                                <Link to={'/workspace/' + workspaceId + '/' + channel_id} className='channel-link'>#{channel_name}</Link>
-                        )
-                        })
-                    }
+                    <div className='channel-link-container'>
+                        {
+                            workspace.canales.map(channel =>{
+                                const {channel_id, channel_name} = channel
+                                return(
+                                    <Link to={'/workspace/' + workspaceId + '/' + channel_id} className='channel-link'>#{channel_name}</Link>
+                            )
+                            })
+                        }
+                    </div>
                 </div>
                 <div className='deployable-footer'>
                     <div className='create-channel-box'>

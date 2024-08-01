@@ -14,8 +14,8 @@ const CreateWorkspace = () => {
     
     const handleSubmit = (e) =>{
         e.preventDefault()
-        if(!(e.target['new-workspace-name'].value === '') && !(e.target['new-channel-name'].value === '')){
-            console.log(e)
+        if(!(e.target['new-workspace-name'].value === '') && !(e.target['new-channel-name'].value === '') && (e.target['new-workspace-name'].value.length <= 20) && (e.target['new-channel-name'].value.length <= 20)){
+            console.log(e.target['new-channel-name'].value.length)
 
             workspace.push({
                 workspace_name: e.target['new-workspace-name'].value,
@@ -36,6 +36,7 @@ const CreateWorkspace = () => {
         }
     }
 
+    
     return (
         <main className='create-workspace-main'>
             <div className='link-box'>
@@ -45,9 +46,9 @@ const CreateWorkspace = () => {
             <div className='create-workspace-title'><h2 className='title-text'>Crea tu espacio de trabajo!</h2></div>
             <div className='form-box'>
                 <label htmlFor="new-workspace-name" className='labels'>Nombre del workspace</label>
-                <input type="text" name='new-workspace-name' id='new-workspace-name' className='inputs' />
+                <input placeholder='Max 20 caracteres' type="text" name='new-workspace-name' id='new-workspace-name' className='inputs' />
                 <label htmlFor="new-channel-name" className='labels'>Nombre del canal</label>
-                <input type="text" name='new-channel-name' id='new-channel-name' className='inputs'/>
+                <input placeholder='Max 20 caracteres' type="text" name='new-channel-name' id='new-channel-name' className='inputs'/>
                 <button type='submit' className='workspace-bttn'>Crear</button>
             </div>
             </form>

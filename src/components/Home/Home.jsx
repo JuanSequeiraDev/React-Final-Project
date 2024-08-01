@@ -32,7 +32,7 @@ const Home = () => {
                             <div className='channel' key={workspace_id}>
                                 <span className='home-text workspace-name'>{workspace_name}</span>
                                 <div className='link-box'>
-                                    <Link to={'/workspace/' + workspace_id} className='home-text workspace-link'>Entrar</Link>
+                                    <Link to={'/workspace/' + workspace_id + '/1'} className='home-text workspace-link'>Entrar</Link>
                                 </div>
                             </div>
                         )

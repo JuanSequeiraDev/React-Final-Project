@@ -2,6 +2,7 @@ import React from 'react'
 import './MessageForm.css'
 import { addMessageMook, guardarMook, obtenerMook } from '../../LocalStorage/localStorageFunctions'
 import { useParams } from 'react-router-dom'
+import { IoSend } from "react-icons/io5";
 
 const MessageForm = ({messages, setMessages}) => {
 
@@ -38,12 +39,14 @@ const MessageForm = ({messages, setMessages}) => {
                 message_id: messages.length + 1
             })
         }
+
+        e.target[0].value = ''
     }
 
     return (
         <form className='message-form' onSubmit={handleSubmit}>
             <input type="text" name='message' className='text-input'/>
-            <button type="submit" className='text-submit-bttn'>Upload</button>
+            <button type="submit" className='text-submit-bttn'><IoSend className='send-arrow'/></button>
         </form>
     )
 }
