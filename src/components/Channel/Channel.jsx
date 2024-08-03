@@ -24,7 +24,7 @@ const Channel = () => {
         [channelId]
     )
 
-    console.log(messages)
+    /* console.log(messages) */
 
     return (
         <main className='channel-screen'>

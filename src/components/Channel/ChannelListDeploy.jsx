@@ -10,7 +10,7 @@ const ChannelListDeploy = () => {
 
 
     const workspace = obtenerWorkSpace(workspaceId)
-    console.log(workspace)
+    /* console.log(workspace) */
     const [displayValue, setDisplayValue] = useState('none')
     const [channelBttnDisplay, setChannelBttnDisplay] = useState('none')
 
@@ -45,7 +45,7 @@ const ChannelListDeploy = () => {
                             workspace.canales.map(channel =>{
                                 const {channel_id, channel_name} = channel
                                 return(
-                                    <Link to={'/workspace/' + workspaceId + '/' + channel_id} className='channel-link'>#{channel_name}</Link>
+                                    <Link to={'/workspace/' + workspaceId + '/' + channel_id} className='channel-link' key={channel_id + 1}>#{channel_name}</Link>
                             )
                             })
                         }

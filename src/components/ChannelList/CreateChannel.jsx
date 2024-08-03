@@ -7,7 +7,7 @@ import './CreateChannel.css'
 const CreateChannel = () => {
     const {workspaceId, channelId} = useParams()
     const IdWorkspace = workspaceId - 1
-    console.log(IdWorkspace)
+    /* console.log(IdWorkspace) */
     const [workspace, setWorkspace] = useState([])
 
     useEffect(() => {
@@ -19,7 +19,7 @@ const CreateChannel = () => {
     const handleSubmit = (e) =>{
         e.preventDefault()
         if(!(e.target['new-channel-name'].value === '') && (e.target['new-channel-name'].value.length <= 20)){
-            console.log(e.target['new-channel-name'].value.length)
+            /* console.log(e.target['new-channel-name'].value.length) */
 
             workspace[IdWorkspace].canales.push(
                     {
