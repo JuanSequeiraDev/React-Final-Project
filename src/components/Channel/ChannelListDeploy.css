@@ -4,6 +4,7 @@
     justify-content: space-between;
     width: 100%;
     min-height: 40%;
+    max-height: 100%;
     border-bottom: grey solid 4px;
     position: absolute;
     top: 0;
@@ -36,9 +37,11 @@
 
 .channel-link-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
+    flex-direction: column;
+    padding-left: 10px;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 56vh;
 }
 
 .channel-link{
